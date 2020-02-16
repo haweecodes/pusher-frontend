@@ -84,6 +84,7 @@ export default {
         name: '',
         email: '',
         password: '',
+        role: 'user',
       },
       signupMessage: '',
       signedUp: false,

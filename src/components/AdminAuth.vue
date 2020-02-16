@@ -85,7 +85,7 @@ export default {
     loginFunction() {
       if (this.$refs.form.validate()) {
         const auth = this.authObject;
-        this.$store.dispatch('loginAdmin', auth).then((res) => {
+        this.$store.dispatch('loginAction', auth).then((res) => {
           window.localStorage.setItem('user', JSON.stringify(res));
           this.$router.push('/dashboard');
         }).catch(((err) => {

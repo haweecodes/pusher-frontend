@@ -29,16 +29,16 @@ const actions = {
     });
   },
 
-  loginAdmin(context, payload) {
-    return new Promise((resolve, reject) => {
-      axios.post('/user/login/admin', payload).then((response) => {
-        resolve(response.data);
-      })
-        .catch((e) => {
-          reject(e.response.status);
-        });
-    });
-  },
+  // loginAdmin(context, payload) {
+  //   return new Promise((resolve, reject) => {
+  //     axios.post('/user/login/admin', payload).then((response) => {
+  //       resolve(response.data);
+  //     })
+  //       .catch((e) => {
+  //         reject(e.response.status);
+  //       });
+  //   });
+  // },
 };
 
 export default {
